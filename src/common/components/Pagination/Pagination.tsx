@@ -5,7 +5,7 @@ export interface PaginationProps {
     currentPage: number;
     pageSize: number;
 }
-export const Pagination = ({
+export const Pagination: React.FC<PaginationProps> = ({
     onPageChange,
     changeSize,
     totalCount,
@@ -21,6 +21,7 @@ export const Pagination = ({
             return;
         }
         onPageChange(currentPage + 1);
+
     };
     const onPrevious = () => {
         if (currentPage === 1) {
@@ -55,7 +56,7 @@ export const Pagination = ({
             </li>
             <li className="p-3 ">
                 <img
-                    className="hover:cursor-pointer"
+                    className="prev-arrow hover:cursor-pointer"
                     onClick={onPrevious}
                     src="icons/prev.svg"
                     alt="prev-icon"
@@ -64,7 +65,7 @@ export const Pagination = ({
 
             <li className="p-3 " onClick={onNext}>
                 <img
-                    className="hover:cursor-pointer"
+                    className="next-arrow hover:cursor-pointer"
                     onClick={onNext}
                     src="icons/next.svg"
                     alt="next-icon"
