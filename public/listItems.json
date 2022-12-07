@@ -1,0 +1,15 @@
+{
+  "tabs": [
+    { "icon": "../icons/overview.svg", "title": "Overview" },
+    { "icon": "../icons/tickets.svg", "title": "Tickets" },
+    { "icon": "../icons/ideas.svg", "title": "Ideas" },
+    { "icon": "../icons/contacts.svg", "title": "Contacts" },
+    { "icon": "../icons/agents.svg", "title": "Agents" },
+    { "icon": "../icons/articels.svg", "title": "Articles" },
+    { "icon": "../icons/settings.svg", "title": "Settings" },
+    {
+      "icon": "../icons/subscription.svg",
+      "title": "Subscription"
+    }
+  ]
+}
